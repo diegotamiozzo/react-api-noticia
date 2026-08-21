@@ -1,0 +1,23 @@
+.category-page {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.category-header-info {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.category-header-info h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.category-header-info p {
+  color: #4b5563;
+  font-size: 1.1rem;
+}
