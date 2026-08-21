@@ -65,7 +65,7 @@
 .header-search-mobile {
   display: none;
   padding: 10px 0;
-  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .mobile-menu-btn {

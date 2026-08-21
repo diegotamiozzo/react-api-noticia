@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import './SearchBar.css';
 
-export default function SearchBar() {
+export default function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
@@ -11,6 +11,7 @@ export default function SearchBar() {
     e.preventDefault();
     if (searchTerm.trim()) {
       navigate(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+      if (onSearch) onSearch();
     }
   };
 

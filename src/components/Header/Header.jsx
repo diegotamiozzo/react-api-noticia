@@ -31,6 +31,12 @@ export default function Header() {
         </button>
       </div>
 
+      <div className="header-search-mobile">
+        <div className="container">
+          <SearchBar onSearch={() => setMobileMenuOpen(false)} />
+        </div>
+      </div>
+
       <nav className={`header-nav ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="container nav-container">
           <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMobileMenuOpen(false)}>
@@ -46,9 +52,6 @@ export default function Header() {
               {cat.name}
             </NavLink>
           ))}
-          <div className="header-search-mobile">
-            <SearchBar />
-          </div>
         </div>
       </nav>
     </header>
