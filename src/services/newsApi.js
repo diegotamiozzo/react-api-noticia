@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_NEWS_API_KEY || 'pub_ee9f1dc6f1e549c587ced033fc5f29ba';
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 const BASE_URL = 'https://newsdata.io/api/1';
 
 export const getNews = async ({ query = '', category = '', country = 'br', language = 'pt' } = {}) => {
